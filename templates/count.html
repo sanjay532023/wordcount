@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count Page</title>
+</head>
+<body>
+
+    <h1> Word Counted....</h1>
+    <h2>Your Text</h2>
+    {{fullText}}
+    </br>
+    <h2>Word Count</h2>
+    Total Words = {{word}}
+    </br>
+    <h2>Word Count</h2>
+
+    {% for word,value in wordDictionary %}
+    {{word}} =  {{value}}
+    <br>
+    {%endfor%}
+</br>
+</br>
+<a href="{%url 'home'%}"> Back To homepage</a>
+</body>
+</html>
